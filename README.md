@@ -30,8 +30,14 @@ cd healthy-csit
 ```
 
 Вызовите главный скрипт. Например,
-```bash
+```powershell
 python .\healthy-csit\hcsit.py healthy-someone.csv --height 186 \
+    --weight 67 --heart-beat-rate 68 --blood-pressure 125/86 \
+    --appetite 1 --sleep-start 23:30 --sleep-end 06:30 \
+    --date-start 16.09.2022 --date-end 16.10.2022
+```
+```bash
+python ./healthy-csit/hcsit.py healthy-someone.csv --height 186 \
     --weight 67 --heart-beat-rate 68 --blood-pressure 125/86 \
     --appetite 1 --sleep-start 23:30 --sleep-end 06:30 \
     --date-start 16.09.2022 --date-end 16.10.2022
@@ -43,9 +49,11 @@ python .\healthy-csit\hcsit.py healthy-someone.csv --height 186 \
 ## Список параметров
 Список параметров, которые возможно передать приложению,
 можно вывести при помощи
-```bash
+```powershell
 python .\healthy-csit\hcsit.py -h
 ``` 
-
+```bash
+python ./healthy-csit/hcsit.py -h
+```
 Некоторые данные надо обязательно передать приложению, а вместо каких-то
 приложение возьмет значения по умолчанию.
